@@ -32,12 +32,17 @@ header>div>p:hover {
 }
 
 main {
-    min-height: 80vh;
-    overflow: auto;
+    max-height: 82%;
+    overflow-y: scroll;
+    background-color: grey;
+    color: white;
 }
 
 footer {
+    width: 100%;
     display: flex;
+    position: fixed;
+    bottom: 0;
     justify-content: space-between;
     animation: gradient 3s infinte;
     background-image: linear-gradient(to right, red, blue);
@@ -69,7 +74,7 @@ footer>div>img {
 }
 
 footer>div>#text {
-    width: 88vw;
+    /* width: 88vw; */
     height: 3vmax;
     margin-top: 1vmax;
 }
